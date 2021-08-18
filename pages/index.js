@@ -36,7 +36,7 @@ export default function Home() {
             <div className=''>
               <h1 className='display-01'>Vivian</h1>
               <h1 className='display-01 max-w-4xl'>I'm a developer, designer and maker. With heart.</h1>
-              <h2 className='mb-8 max-w-lg'>I'll help you build a modern, resilient, and inclusive interface and design system, with a strong focus on responsive design, performance, and accessibility.</h2>
+              <h2 className='mb-8 mt-6 max-w-xl'>I'll help you build a modern, resilient, and inclusive interface and design system, with a strong focus on responsive design, performance, and accessibility.</h2>
               {/* <Link href="/about">Read more about me&nbsp; →</Link> */}
             </div>
             
@@ -46,10 +46,10 @@ export default function Home() {
         </section>
 
         <section className='p-20' id="projects">
-          <h2>Select Projects</h2>
+          <h2 className='font-bold'>Select Projects</h2>
         <div className="flex flex-col justify-around mt-6 sm:w-full">
           <a
-            href="https://nextjs.org/docs"
+            href="https://ibm.org"
             className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">IBM.org &rarr;</h3>
@@ -59,17 +59,17 @@ export default function Home() {
           </a>
 
           <a
-            href="https://nextjs.org/docs"
+            href="https://skillsbuild.org/"
             className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">IBM Skillsbuild &rarr;</h3>
             <p className="mt-4 text-xl">
-              I was part of the team that took the IBM.org site from conception to execution.
+              I was part of the team that built an interrnal learning platform for IBM employees.
             </p>
           </a>
 
           <a
-            href="https://nextjs.org/learn"
+            href="https://designthread.xyz"
             className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Designthread &rarr;</h3>
@@ -113,7 +113,7 @@ export default function Home() {
       
         <section>
             <div className='p-20 bg-gray-10'>
-                <h2 className='heading--2 mb-4'>Skills</h2>
+                <h2 className='mb-4 font-bold'>Skills</h2>
                 <div className='grid-container'>
                   <div className=''>
                     <h3 className='font-semibold mb-4'>Languages &amp; Frameworks</h3>
@@ -172,8 +172,10 @@ export default function Home() {
         
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-          This site is built with&nbsp;<a className='inline-block underline' href="https://nextjs.org" target="_blank">Next</a>&nbsp;and hosted on&nbsp;<a className='underline' href="https://vercel.com/" target="_blank">Vercel</a>. The source code is hosted on&nbsp;<a className='underline' href="https://github.com" target="_blank">Github</a>.
+      <footer className="flex flex-col items-center justify-center w-full h-24 border-t">
+          
+          <p className='text-xs'>This site is built with&nbsp;<a className='inline-block underline' href="https://nextjs.org" target="_blank">Next</a>&nbsp;and hosted on&nbsp;<a className='underline' href="https://vercel.com/" target="_blank">Vercel</a>. The source code is hosted on&nbsp;<a className='underline' href="https://github.com" target="_blank">Github</a>.</p>
+          {/* <p className='text-xs mt-2'>Built by Vivian Chen in 2021</p> */}
       </footer>
     </div>
   )

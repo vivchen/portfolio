@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+// TO DO : add education and work history
 export default function Home() {
   return (
     <div className="py-2">
