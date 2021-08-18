@@ -3,79 +3,177 @@
 
 
 import Head from 'next/head'
+import Link from 'next/link'
+import { HashLink as HLink } from 'react-router-hash-link';
 
 export default function Home() {
   return (
-    <div className="py-2">
+    <div className="">
       <Head>
         <title>Vivian Chen</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet"></link>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <header>
+        <div className='px-20 py-10 flex bg-gray-10 justify-between main-nav'>
+          <div className=''><img alt="" src="/heart.svg"/></div>
+          <div>
+            <ul className='main-nav__list'>
+              {/* <li className='inline-block main-nav__item'><Link href="/about">about me</Link></li> */}
+              <li className='inline-block main-nav__item'><a href="#projects">projects</a></li>
+              {/* <HLink to='#projects'>projects</HLink> */}
+              <li className='inline-block main-nav__item'><a href="mailto:vivianchen@hey.com">email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
       <main className="">
 
         <section className='bg-gray-10'>
           <div className='p-20'>
-            <h1 className='display-01'>Vivian</h1>
-            <h1 className='display-01'>developer, designer and maker.</h1>
-            <h2>Endlessly curious and bringer-together of good people and great minds.</h2>
-            <a href="/about" className='link'>Read more about me&nbsp; →</a>
-
+            <div className=''>
+              <h1 className='display-01'>Vivian</h1>
+              <h1 className='display-01 max-w-4xl'>I'm a developer, designer and maker. With heart.</h1>
+              <h2 className='mb-8 max-w-lg'>I'll help you build a modern, resilient, and inclusive interface and design system, with a strong focus on responsive design, performance, and accessibility.</h2>
+              {/* <Link href="/about">Read more about me&nbsp; →</Link> */}
+            </div>
+            
           </div>
         
           
         </section>
-        <section className='bg-gray-20'>
-          <div className='p-20'>
-            <h2>01</h2>
-            <h2>IBM.org</h2>
-            <p>Took the IBM.org site from conception to execution </p>
 
-          </div>
-          
+        <section className='p-20' id="projects">
+          <h2>Select Projects</h2>
+        <div className="flex flex-col justify-around mt-6 sm:w-full">
+          <a
+            href="https://nextjs.org/docs"
+            className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
+          >
+            <h3 className="text-2xl font-bold">IBM.org &rarr;</h3>
+            <p className="mt-4 text-xl">
+              I was part of the team that took the IBM.org site from conception to execution.
+            </p>
+          </a>
 
+          <a
+            href="https://nextjs.org/docs"
+            className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
+          >
+            <h3 className="text-2xl font-bold">IBM Skillsbuild &rarr;</h3>
+            <p className="mt-4 text-xl">
+              I was part of the team that took the IBM.org site from conception to execution.
+            </p>
+          </a>
+
+          <a
+            href="https://nextjs.org/learn"
+            className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
+          >
+            <h3 className="text-2xl font-bold">Designthread &rarr;</h3>
+            <p className="mt-4 text-xl">
+            Designthread is a side project that grew out of the desire to grow a community platform to encourage professional insight exchange across design disciplines.
+            </p>
+          </a>
+
+        </div>
         </section>
+        {/* <section className='bg-gray-20'>
+          <div className='p-20'>
+            <h2 className='mt-20'>01</h2>
+            <h2 className='mt-10'>IBM.org</h2>
+            <h3>-- Frontend and design system engineer</h3>
+            <p>I was part of the team that took the IBM.org site from conception to execution.</p>
+            <a target="_blank" href="https://ibm.org">View the site&nbsp; →</a>
+            <p>Case study coming soon</p>
+          </div>
+        </section>
+        <section className='bg-gray-30'>
+          <div className='p-20'>
+            <h2 className='mt-20'>02</h2>
+            <h2 className='mt-10'>Designthread</h2>
+            <h3>-- Frontend development</h3>
+            <p>Designthread is a side project that grew out of the desire to grow a community platform to encourage professional insight exchange across design disciplines.</p>
+            <a target="_blank" href="https://designthread.xyz">View the site&nbsp; →</a>
+            <p>Case study coming soon</p>
+          </div>
+        </section>
+        <section className='bg-gray-30'>
+          <div className='p-20'>
+            <h2 className='mt-20'>03</h2>
+            <h2 className='mt-10'>Traffik Analysis Hub</h2>
+            <h3>-- Frontend development</h3>
+            <p>Designthread is a side project that grew out of the desire to grow a community platform to encourage professional insight exchange across design disciplines.</p>
+            <a target="_blank" href="https://designthread.xyz">View the site&nbsp; →</a>
+            <p>Case study coming soon</p>
+          </div>
+        </section> */}
+      
         <section>
-            <div className='p-20'>
-                <h2>Skills</h2>
-                <div className='row'>
-                  <div className='col-md-3 col-sm-6 col-6 mb-8'>
-                    <h3>Strategies & Methodologies</h3></div>
-                  <div className='col-md-3 col-sm-6 col-6 mb-8'>asdf</div>
+            <div className='p-20 bg-gray-10'>
+                <h2 className='heading--2 mb-4'>Skills</h2>
+                <div className='grid-container'>
+                  <div className=''>
+                    <h3 className='font-semibold mb-4'>Languages &amp; Frameworks</h3>
+                    <ul className='list'>
+                      <li>HTML/CSS</li>
+                      <li>SCSS/Tailwind/BEM</li>
+                      <li>Javascript/jQuery/ES6</li>
+                      <li>React/Next/Gatsby</li>
+                      <li>Shopify/Liquid</li>
+                      <li>PHP/Wordpress</li>
+                      <li>Carbon</li>
+                    </ul>
+                  </div>
+                  <div className=''>
+                    <h3 className='font-semibold mb-4'>Dev tools</h3>
+                    <ul className='list'>
+                      <li>Grunt/Gulp</li>
+                      <li>Webpack</li>
+                      <li>NPM/Yarn</li>
+                      <li>Git/Github</li>
+                     
+                    </ul>
+                  </div>
+                  <div className=''>
+                    <h3 className='font-semibold mb-4'>Strategies &amp; Methodologies</h3>
+                    <ul className='list'>
+                      <li>Moodboards/Style Tiles</li>
+                      <li>Design Thinking</li>
+                      <li>Pragmatic Marketing</li>
+                      <li>Agile/Scrum/Jira</li>
+                      <li>Project Scoping</li>
+                      <li>GV Design Sprint</li>
+                      
+                    </ul>
+                  </div>
+                  <div className=''>
+                    <h3 className='font-semibold mb-4'>Design tools</h3>
+                    <ul className='list'>
+                      <li>Sketch/Zeplin</li>
+                      <li>Figma</li>
+                      <li>Invision</li>
+                      <li>Storybook</li>
+                      <li>Webflow</li>
+                      <li>Adobe Illustrator/InDesign</li>
+                      
+
+                    </ul>
+                  </div>
+                 
                 </div>
             </div>
         </section>
         
         
 
-        {/* <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-        </div> */}
+        
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
-        
-          Built by Vivian Chen in 2021
-  
+          This site is built with&nbsp;<a className='inline-block underline' href="https://nextjs.org" target="_blank">Next</a>&nbsp;and hosted on&nbsp;<a className='underline' href="https://vercel.com/" target="_blank">Vercel</a>. The source code is hosted on&nbsp;<a className='underline' href="https://github.com" target="_blank">Github</a>.
       </footer>
     </div>
   )

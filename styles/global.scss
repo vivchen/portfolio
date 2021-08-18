@@ -10,14 +10,49 @@
 }
 
 .heading--1 {
+
     font-size: 42px;
 }
 
+.heading--2 {
+    font-size: 28px;
+}
+
+.heading--3 {
+    font-size: 16px;
+}
+
+
 .display-01 {
+    font-family: 'Inter';
     font-size: 64px;
     font-weight: 600;
 }
 
 .link {
     font-weight: 400;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+   
+}
+
+
+.link {
+
+}
+
+.list {
+    li + li {
+        margin-top: 8px;
+    }
+}
+
+.main-nav {
+    .main-nav__item + .main-nav__item{
+        margin-left: 16px;
+    }
 }

@@ -21,6 +21,34 @@ export default function Home() {
         
           
         </section>
+
+        <section className='bg-gray-10'>
+          <div className='p-20'>
+            
+            <p>As a web ui and design systems engineer, I help teams plan out ....
+
+            </p>
+
+            <p>I take on client projects with my friends at All Purpose, a social impact agency based out of Vancouver, BC.</p>
+
+            <p>I was was born and raised on an island in the unceded lands of the Lil̓wat7úl, N’Quatqua, Sḵwx̱wú7mesh, xʷməθkʷəy̓əm, and Səl̓ilwətaɁɬ peoples surrounded by cold sea and deep forests.</p>
+
+            <p>When I'm not at my desk in Vancouver, BC, you might find me playing softball at a nearby diamond, if it's raining I'm likely sewing up a store at my daining table, or walking my senior Aussie Cattle Dog, <a href="#">Dundee</a>.</p>
+            
+
+            
+            <h2>Some facts about me:</h2>
+            <ul>
+                <li>I don't drink coffee, or caffeine for that matter. My favorite alternatives are a spicy rooibois chai tea, dandy blend or a homemade ginger tea.</li>
+                <li>I can type at __, see if you can beat me.</li>
+                <li>I love to <a href="https://www.instagram.com/hastyviv/">sew</a> and am currently embarking on a journey of sewing my own wedding dress. Ask me how that's going.</li>
+            </ul>
+          </div>
+        
+          
+        </section>
+        
+
         
 
         
