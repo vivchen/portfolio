@@ -1,6 +1,14 @@
 @import "colors.scss";
 
 
+body {
+    color: $gray-90;
+    // font-family: 'Roboto';
+}
+
+.heart-logo {
+    width: 32px;
+}
 .bg-gray-10 {
     background-color: $gray-10;
 }
