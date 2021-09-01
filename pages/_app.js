@@ -1,6 +1,6 @@
 import "tailwindcss/tailwind.css";
-import "../styles/global.scss";
 import "../public/css/bootstrap.min.css";
+import "../styles/global.scss";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

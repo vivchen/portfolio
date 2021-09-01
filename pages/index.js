@@ -67,27 +67,11 @@ export default function Home() {
 
         <section className="p-20" id="projects">
           <div className="container">
-            <div className="row">
+            <div className="row  ">
               <div className="col col-lg-8">
-                <h2 className="font-bold">Select Projects</h2>
-                <div className="flex flex-col justify-around mt-6 sm:w-full">
-                  <p>Coming soon</p>
-                  {/* <a
-                href="https://ibm.org"
-                target="_blank"
-                className="p-6 mt-6 text-left  flex items-center"
-              >
-                <div className='hover:text-blue-600 focus:text-blue-600'>
-                  <h3 className="text-2xl font-bold">IBM.org &rarr;</h3>
-                  <p className="mt-4 text-xl max-w-lg">
-                    IBM was growing their Corporate Social Responsibility initiative and I was part of the team that took the IBM.org site from conception to execution.
-                  </p>
-                </div>
-                <img alt="ibm logo" src="/rebus-totem-positive.svg"/>
-                
-              </a> */}
+                <h2 className="font-bold mb-12">Select Projects</h2>
 
-                  {/* <a
+                {/* <a
                 href="https://skillsbuild.org/"
                 target="_blank"
                 className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
@@ -97,23 +81,58 @@ export default function Home() {
                   IBM Skillsbuild is an internal learning platform for IBM employees.
                 </p>
               </a> */}
-                  {/* <div className='flex flex-col justify-around mt-6 sm:w-full'>
-              <a
-                href="https://designthread.xyz"
-                target="_blank"
-                className="p-6 mt-6 text-left hover:text-blue-600 focus:text-blue-600 flex items-center"
-              >
+              </div>
+            </div>
+            <div className="row flex items-center flex-grow">
+              <div className="col col-lg-4 hidden-md-down">
+                <div className="flex items-center">
+                  <div className="">
+                    <h3 className="text-2xl font-bold">IBM.org</h3>
+                    <p className="mt-4 text-xl max-w-lg">
+                      As IBM grew their Corporate Social Responsibility
+                      initiative, I was part of the team that took the IBM.org
+                      site from conception to execution.
+                    </p>
+                    <a
+                      href="https://designthread.xyz"
+                      target="_blank"
+                      className="mt-6 text-left text-xl flex items-center"
+                    >
+                      View the site &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-lg-3 offset-lg-2">
+                <img alt="ibm logo" src="/rebus-totem-positive.svg" />
+              </div>
+            </div>
+
+            <div className="row flex items-center flex-grow mt-12">
+              <div className="col col-lg-4">
                 <div>
-                  <h3 className="text-2xl font-bold">Designthread &rarr;</h3>
+                  <h3 className="text-2xl font-bold">Designthread</h3>
                   <p className="mt-4 text-xl max-w-lg">
-                  Designthread grew out of the desire to grow a community platform to encourage professional insight exchange across design disciplines. This was a passion project that I built with some friends.
+                    Designthread grew out of the desire to see a community
+                    platform that would encourage professional insight exchange
+                    across design disciplines. This was a passion project that I
+                    built with some friends.
                   </p>
+                  <a
+                    href="https://designthread.xyz"
+                    target="_blank"
+                    className=" mt-6 text-left text-xl flex items-center"
+                  >
+                    View the site &rarr;
+                  </a>
                 </div>
-                <img alt="designthread screenshot" className='max-w-sm' src="/design-thread.png"/>
-                
-              </a>
-            </div> */}
-                </div>
+              </div>
+              <div className="col col-lg-3 offset-md-2 offset-lg-2">
+                <img
+                  alt="designthread screenshot"
+                  className="max-w-sm"
+                  src="/design-thread.png"
+                />
               </div>
             </div>
           </div>

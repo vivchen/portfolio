@@ -1,66 +1,78 @@
 @import "colors.scss";
 
+// bootstrap overrides
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: $gray-90;
+}
+
+a:hover {
+  color: $gray-90 !important;
+  text-decoration: none;
+}
+
+// end bootstrap overrides
 
 body {
-    color: $gray-90;
-    // font-family: 'Roboto';
+  color: $gray-90;
+  // font-family: 'Roboto';
 }
 
 .heart-logo {
-    width: 32px;
+  width: 32px;
 }
 .bg-gray-10 {
-    background-color: $gray-10;
+  background-color: $gray-10;
 }
 
 .bg-gray-20 {
-    background-color: $gray-20;
+  background-color: $gray-20;
 }
 
 .heading--1 {
-
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .heading--2 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .heading--3 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-
 .display-01 {
-    font-family: 'Inter';
-    font-size: 64px;
-    font-weight: 600;
+  font-family: "Inter";
+  font-size: 64px;
+  font-weight: 600;
 }
 
 .link {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-   
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
 }
 
-
 .link {
-
 }
 
 .list {
-    li + li {
-        margin-top: 8px;
-    }
+  li + li {
+    margin-top: 8px;
+  }
 }
 
 .main-nav {
-    .main-nav__item + .main-nav__item{
-        margin-left: 16px;
-    }
+  .main-nav__item + .main-nav__item {
+    margin-left: 16px;
+  }
 }
