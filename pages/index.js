@@ -45,68 +45,77 @@ export default function Home() {
         </div>
       </header>
       <main className="">
-        <section className="bg-gray-10">
-          <div className="p-20">
-            <div className="">
-              <h1 className="display-01">Vivian</h1>
-              <h1 className="display-01 max-w-4xl">
-                I'm a developer, designer and maker. With heart.
-              </h1>
-              <h2 className="mb-8 mt-6 max-w-xl">
-                I'll help you build a modern, resilient, and inclusive interface
-                and design system, with a strong focus on responsive design,
-                performance, and accessibility.
-              </h2>
+        <section className="bg-gray-10 ">
+          <div className="p-20 container">
+            <div className="row">
+              <div className="col col-lg-8 col-md-8">
+                <h1 className="display-01">Vivian</h1>
+                <h1 className="display-01">
+                  I'm a developer, designer and maker. With heart.
+                </h1>
+                <h2 className="mb-8 mt-6 max-w-xl">
+                  I'll help you build a modern, resilient, and inclusive
+                  interface and design system, with a strong focus on responsive
+                  design, performance, and accessibility.
+                </h2>
+              </div>
+
               {/* <Link href="/about">Read more about me&nbsp; →</Link> */}
             </div>
           </div>
         </section>
 
         <section className="p-20" id="projects">
-          <h2 className="font-bold">Select Projects</h2>
-          <div className="flex flex-col justify-around mt-6 sm:w-full">
-            <p>Coming soon</p>
-            {/* <a
-            href="https://ibm.org"
-            target="_blank"
-            className="p-6 mt-6 text-left  flex items-center"
-          >
-            <div className='hover:text-blue-600 focus:text-blue-600'>
-              <h3 className="text-2xl font-bold">IBM.org &rarr;</h3>
-              <p className="mt-4 text-xl max-w-lg">
-                IBM was growing their Corporate Social Responsibility initiative and I was part of the team that took the IBM.org site from conception to execution.
-              </p>
-            </div>
-            <img alt="ibm logo" src="/rebus-totem-positive.svg"/>
-            
-          </a> */}
+          <div className="container">
+            <div className="row">
+              <div className="col col-lg-8">
+                <h2 className="font-bold">Select Projects</h2>
+                <div className="flex flex-col justify-around mt-6 sm:w-full">
+                  <p>Coming soon</p>
+                  {/* <a
+                href="https://ibm.org"
+                target="_blank"
+                className="p-6 mt-6 text-left  flex items-center"
+              >
+                <div className='hover:text-blue-600 focus:text-blue-600'>
+                  <h3 className="text-2xl font-bold">IBM.org &rarr;</h3>
+                  <p className="mt-4 text-xl max-w-lg">
+                    IBM was growing their Corporate Social Responsibility initiative and I was part of the team that took the IBM.org site from conception to execution.
+                  </p>
+                </div>
+                <img alt="ibm logo" src="/rebus-totem-positive.svg"/>
+                
+              </a> */}
 
-            {/* <a
-            href="https://skillsbuild.org/"
-            target="_blank"
-            className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">IBM Skillsbuild &rarr;</h3>
-            <p className="mt-4 text-xl max-w-lg">
-              IBM Skillsbuild is an internal learning platform for IBM employees.
-            </p>
-          </a> */}
-            {/* <div className='flex flex-col justify-around mt-6 sm:w-full'>
-          <a
-            href="https://designthread.xyz"
-            target="_blank"
-            className="p-6 mt-6 text-left hover:text-blue-600 focus:text-blue-600 flex items-center"
-          >
-            <div>
-              <h3 className="text-2xl font-bold">Designthread &rarr;</h3>
-              <p className="mt-4 text-xl max-w-lg">
-              Designthread grew out of the desire to grow a community platform to encourage professional insight exchange across design disciplines. This was a passion project that I built with some friends.
-              </p>
+                  {/* <a
+                href="https://skillsbuild.org/"
+                target="_blank"
+                className="p-6 mt-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
+              >
+                <h3 className="text-2xl font-bold">IBM Skillsbuild &rarr;</h3>
+                <p className="mt-4 text-xl max-w-lg">
+                  IBM Skillsbuild is an internal learning platform for IBM employees.
+                </p>
+              </a> */}
+                  {/* <div className='flex flex-col justify-around mt-6 sm:w-full'>
+              <a
+                href="https://designthread.xyz"
+                target="_blank"
+                className="p-6 mt-6 text-left hover:text-blue-600 focus:text-blue-600 flex items-center"
+              >
+                <div>
+                  <h3 className="text-2xl font-bold">Designthread &rarr;</h3>
+                  <p className="mt-4 text-xl max-w-lg">
+                  Designthread grew out of the desire to grow a community platform to encourage professional insight exchange across design disciplines. This was a passion project that I built with some friends.
+                  </p>
+                </div>
+                <img alt="designthread screenshot" className='max-w-sm' src="/design-thread.png"/>
+                
+              </a>
+            </div> */}
+                </div>
+              </div>
             </div>
-            <img alt="designthread screenshot" className='max-w-sm' src="/design-thread.png"/>
-            
-          </a>
-        </div> */}
           </div>
         </section>
         {/* <section className='bg-gray-20'>
@@ -140,56 +149,60 @@ export default function Home() {
           </div>
         </section> */}
 
-        <section>
-          <div className="p-20 bg-gray-10">
-            <h2 className="mb-4 font-bold">Skills</h2>
-            <div className="grid-container">
-              <div className="">
-                <h3 className="font-semibold mb-4">
-                  Languages &amp; Frameworks
-                </h3>
-                <ul className="list">
-                  <li>HTML/CSS</li>
-                  <li>SCSS/Tailwind/BEM</li>
-                  <li>Javascript/jQuery/ES6</li>
-                  <li>React/Next/Gatsby</li>
-                  <li>Shopify/Liquid</li>
-                  <li>PHP/Wordpress</li>
-                  <li>Carbon</li>
-                </ul>
-              </div>
-              <div className="">
-                <h3 className="font-semibold mb-4">Dev tools</h3>
-                <ul className="list">
-                  <li>Grunt/Gulp</li>
-                  <li>Webpack</li>
-                  <li>NPM/Yarn</li>
-                  <li>Git/Github</li>
-                </ul>
-              </div>
-              <div className="">
-                <h3 className="font-semibold mb-4">
-                  Strategies &amp; Methodologies
-                </h3>
-                <ul className="list">
-                  <li>Moodboards/Style Tiles</li>
-                  <li>Design Thinking</li>
-                  <li>Pragmatic Marketing</li>
-                  <li>Agile/Scrum/Jira</li>
-                  <li>Project Scoping</li>
-                  <li>GV Design Sprint</li>
-                </ul>
-              </div>
-              <div className="">
-                <h3 className="font-semibold mb-4">Design tools</h3>
-                <ul className="list">
-                  <li>Sketch/Zeplin</li>
-                  <li>Figma</li>
-                  <li>Invision</li>
-                  <li>Storybook</li>
-                  <li>Webflow</li>
-                  <li>Adobe Illustrator/InDesign</li>
-                </ul>
+        <section className="bg-gray-10">
+          <div className="p-20 container">
+            <div className="row">
+              <div className="col col-lg-12">
+                <h2 className="mb-4 font-bold">Skills</h2>
+                <div className="grid-container">
+                  <div className="">
+                    <h3 className="font-semibold mb-4">
+                      Languages &amp; Frameworks
+                    </h3>
+                    <ul className="list">
+                      <li>HTML/CSS</li>
+                      <li>SCSS/Tailwind/BEM</li>
+                      <li>Javascript/jQuery/ES6</li>
+                      <li>React/Next/Gatsby</li>
+                      <li>Shopify/Liquid</li>
+                      <li>PHP/Wordpress</li>
+                      <li>Carbon</li>
+                    </ul>
+                  </div>
+                  <div className="">
+                    <h3 className="font-semibold mb-4">Dev tools</h3>
+                    <ul className="list">
+                      <li>Grunt/Gulp</li>
+                      <li>Webpack</li>
+                      <li>NPM/Yarn</li>
+                      <li>Git/Github</li>
+                    </ul>
+                  </div>
+                  <div className="">
+                    <h3 className="font-semibold mb-4">
+                      Strategies &amp; Methodologies
+                    </h3>
+                    <ul className="list">
+                      <li>Moodboards/Style Tiles</li>
+                      <li>Design Thinking</li>
+                      <li>Pragmatic Marketing</li>
+                      <li>Agile/Scrum/Jira</li>
+                      <li>Project Scoping</li>
+                      <li>GV Design Sprint</li>
+                    </ul>
+                  </div>
+                  <div className="">
+                    <h3 className="font-semibold mb-4">Design tools</h3>
+                    <ul className="list">
+                      <li>Sketch/Zeplin</li>
+                      <li>Figma</li>
+                      <li>Invision</li>
+                      <li>Storybook</li>
+                      <li>Webflow</li>
+                      <li>Adobe Illustrator/InDesign</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
