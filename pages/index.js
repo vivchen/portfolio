@@ -54,11 +54,19 @@ export default function Home() {
                 <h1 className="display-01">
                   I'm a developer, designer and maker.
                 </h1>
-                <h2 className="mb-8 mt-6 max-w-xl">
-                  I'll help you build a modern, resilient, and inclusive
-                  interface and design system, with a strong focus on responsive
-                  design, performance, and accessibility.
-                </h2>
+                <p className="mt-6 max-w-xl">
+                  I take on client projects through{" "}
+                  <a href="https://allpurpose.io" target="_blank">
+                    All Purpose
+                  </a>
+                  , a social impact design agency based out of Vancouver, BC.
+                </p>
+                <p className="mb-8 mt-6 max-w-xl">
+                  As a Front-end Engineer / UX Developer, I'll help you build a
+                  modern, resilient, and inclusive interface and design system,
+                  with a strong focus on responsive design, performance, and
+                  accessibility.
+                </p>
               </div>
 
               {/* <Link href="/about">Read more about me&nbsp; →</Link> */}
