@@ -1,7 +1,6 @@
 @import "colors.scss";
-
+@import "variables.scss";
 // bootstrap overrides
-
 html,
 body {
   height: 100%;
@@ -48,8 +47,12 @@ body {
 
 .display-01 {
   font-family: "Inter";
-  font-size: 64px;
+  font-size: 42px;
   font-weight: 600;
+
+  @media (min-width: $lg) {
+    font-size: 64px;
+  }
 }
 
 .link {
