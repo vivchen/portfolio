@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Vivian Chen</title>
+        <title>Vivian Chenzo</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -160,7 +160,7 @@ export default function Home() {
                   </svg>{" "}
                   <span>|</span> <span className="ml-10">Skillsbuild</span>
                 </h3>
-                
+
               </div>
             </div> */}
 
